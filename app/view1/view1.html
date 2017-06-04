@@ -1,0 +1,51 @@
+  <div>
+     <center ng-hide="battlefield.isWinner">Current Player: {{battlefield.currentPlayer}}</center>
+     <h1 ng-show="battlefield.isWinner"><center>Player: {{battlefield.winner}} is the winner!!!!!</center></h1>
+     <center ng-show="battlefield.isWinner"><button  ng-click="battlefield.restartGame()">Restart</button></center>
+     <br>
+  </div>
+ <table class="table" align="center">
+    <tbody >
+      <tr>
+        <td><input type="checkbox" ng-checked="battlefield.myFields[0].checked" ng-click="battlefield.setField(0)" ng-disabled="battlefield.myFields[0].checked || battlefield.isWinner"></td>
+        <td><input type="checkbox" ng-checked="battlefield.myFields[1].checked" ng-click="battlefield.setField(1)" ng-disabled="battlefield.myFields[1].checked || battlefield.isWinner"></td>
+        <td><input type="checkbox" ng-checked="battlefield.myFields[2].checked" ng-click="battlefield.setField(2)" ng-disabled="battlefield.myFields[2].checked || battlefield.isWinner"></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" ng-checked="battlefield.myFields[3].checked" ng-click="battlefield.setField(3)" ng-disabled="battlefield.myFields[3].checked || battlefield.isWinner"></td>
+        <td><input type="checkbox" ng-checked="battlefield.myFields[4].checked" ng-click="battlefield.setField(4)" ng-disabled="battlefield.myFields[4].checked || battlefield.isWinner"></td>
+        <td><input type="checkbox" ng-checked="battlefield.myFields[5].checked" ng-click="battlefield.setField(5)" ng-disabled="battlefield.myFields[5].checked || battlefield.isWinner"></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" ng-checked="battlefield.myFields[6].checked" ng-click="battlefield.setField(6)" ng-disabled="battlefield.myFields[6].checked || battlefield.isWinner"></td>
+        <td><input type="checkbox" ng-checked="battlefield.myFields[7].checked" ng-click="battlefield.setField(7)" ng-disabled="battlefield.myFields[7].checked || battlefield.isWinner"></td>
+        <td><input type="checkbox" ng-checked="battlefield.myFields[8].checked" ng-click="battlefield.setField(8)" ng-disabled="battlefield.myFields[8].checked || battlefield.isWinner"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table" align="center">
+    <tbody >
+      <tr>
+        <td><my-checkbox ng-model="ds1"  ng-checked="battlefield.myFields[0].checked" ng-click="battlefield.setField(0)" ng-disabled="battlefield.myFields[0].checked || battlefield.isWinner"></my-checkbox></td>
+        <td><my-checkbox ng-model="ds2"  ng-checked="battlefield.myFields[1].checked" ng-click="battlefield.setField(1)" ng-disabled="battlefield.myFields[1].checked || battlefield.isWinner"></my-checkbox></td>
+        <td><my-checkbox ng-model="ds3"  ng-checked="battlefield.myFields[2].checked" ng-click="battlefield.setField(2)" ng-disabled="battlefield.myFields[2].checked || battlefield.isWinner"></my-checkbox></td>
+      </tr>
+      <tr>
+        <td><my-checkbox ng-model="ds4" ng-checked="battlefield.myFields[3].checked" ng-click="battlefield.setField(3)" ng-disabled="battlefield.myFields[3].checked || battlefield.isWinner"></my-checkbox></td>
+        <td><my-checkbox ng-model="ds5" ng-checked="battlefield.myFields[4].checked" ng-click="battlefield.setField(4)" ng-disabled="battlefield.myFields[4].checked || battlefield.isWinner"></my-checkbox></td>
+        <td><my-checkbox ng-model="ds6" ng-checked="battlefield.myFields[5].checked" ng-click="battlefield.setField(5)" ng-disabled="battlefield.myFields[5].checked || battlefield.isWinner"></my-checkbox></td>
+      </tr>
+      <tr>
+        <td><my-checkbox ng-model="ds7" ng-checked="battlefield.myFields[6].checked" ng-click="battlefield.setField(6)" ng-disabled="battlefield.myFields[6].checked || battlefield.isWinner"></my-checkbox></td>
+        <td><my-checkbox ng-model="ds8" ng-checked="battlefield.myFields[7].checked" ng-click="battlefield.setField(7)" ng-disabled="battlefield.myFields[7].checked || battlefield.isWinner"></my-checkbox></td>
+        <td><my-checkbox ng-model="ds9" ng-checked="battlefield.myFields[8].checked" ng-click="battlefield.setField(8)" ng-disabled="battlefield.myFields[8].checked || battlefield.isWinner"></my-checkbox></td>
+      </tr>
+    </tbody>
+  </table>
+
+         
+
+
+
+  

@@ -1,0 +1,70 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.my-checkbox{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.my-checkbox.checked{
+    background: red;
+}
+
+.my-checkbox.blue{
+    background: blue;
+}
+
+.my-checkbox.red{
+    background: red;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+table {
+        width: 100px;
+				border: black 1px solid;
+			}
+			tr {
+				margin: 2px;
+			}
+			td {
+				border: black 1px solid;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+				font-size: 14px;
+			}
+			.winning {
+				background-color: green;
+				color: white;
+			}
